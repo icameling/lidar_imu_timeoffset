@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="path_bag"      default="./test.bag" />
+    <arg name="topic_imu"      default="/imu1/raw/data_withSync" />
+    <arg name="bag_start"      default="4" />
+    <arg name="bag_durr"      default="10" />
+
+    <arg name="lidar_odom_path"    default="./lidar_odom.txt" />
+    <arg name="imu_omega_path"    default="./imu_omega.txt" />
+
+    <node pkg="lidar_odometry" type="lidar_odometry_node" name="lidar_odometry_node" output="screen" >
+
+        <!-- Inputs -->
+        <param name="topic_lidar"   type="string" value="/velodyne_packets" />
+
+        <param name="path_bag"      type="string" value="$(arg path_bag)" />
+        <param name="topic_imu"     type="string" value="$(arg topic_imu)" /> <!-- /imu1/data  /imu1/raw/data_withSync-->
+        <param name="bag_start"     type="double"  value="$(arg bag_start)" />
+        <param name="bag_durr"      type="double"  value="$(arg bag_durr)" />
+
+        <!--Outputs-->
+        <param name="lidar_odom_path"   type="string" value="$(arg lidar_odom_path)" />
+        <param name="imu_omega_path"    type="string" value="$(arg imu_omega_path)" />
+
+    </node>
+
+
+
+
+</launch>
