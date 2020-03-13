@@ -1,12 +1,11 @@
 本工具包实现了一个简单的激光里程计。
 
-基于激光里程计结果和IMU原始角速度测量值，计算两者角速度模长序列，最大两条序列的互相关系数，实现时间偏置的粗略标定。参考https://github.com/ZuoJiaxing/rpg_trajectory_evaluation_modi
-
+基于激光里程计结果和IMU原始角速度测量值，计算两者角速度模长序列，最大两条序列的互相关系数，实现时间偏置的粗略标定。参考[Kalibr](参考https://github.com/ethz-asl/kalibr/blob/master/aslam_offline_calibration/kalibr/python/kalibr_imu_camera_calibration/IccSensors.py#L215:9.)。
 ### Dependencies
 
 **ndt_omp**  用加速版NDT匹配点云。
 
-可参考https://gitee.com/csc105_slam_group/ndt_omp或https://github.com/koide3/ndt_omp
+可参考https://github.com/koide3/ndt_omp。
 
 ### Run
 
