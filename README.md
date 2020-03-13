@@ -1,6 +1,6 @@
 本工具包实现了一个简单的激光里程计。
 
-基于激光里程计结果和IMU原始角速度测量值，计算两者角速度模长序列，最大两条序列的互相关系数，实现时间偏置的粗略标定。
+基于激光里程计结果和IMU原始角速度测量值，计算两者角速度模长序列，最大两条序列的互相关系数，实现时间偏置的粗略标定。参考https://github.com/ZuoJiaxing/rpg_trajectory_evaluation_modi
 
 ### Dependencies
 
