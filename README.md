@@ -14,7 +14,7 @@
 
 ```shell
 roslaunch lidar_odometry lidar_odom.launch \
-						path_bag:="test.bag" \
+            path_bag:="test.bag" \
             topic_imu:="/imu" \
             bag_start:="1" \
             bag_durr:="10" \
@@ -30,9 +30,9 @@ roslaunch lidar_odometry lidar_odom.launch \
 
 ```shell
 python ./scripts/CaculateTimeshift.py \
-						--odom_dir "./odom.txt" \
-						--imu_dir "./omega.txt" \
-						--result_dir "./result.png"
+        --odom_dir "./odom.txt" \
+        --imu_dir "./omega.txt" \
+        --result_dir "./result.png"
 ```
 
 **3. 批量标定rosbag数据包**
