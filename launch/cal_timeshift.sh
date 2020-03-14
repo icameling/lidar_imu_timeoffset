@@ -14,8 +14,8 @@ bag_path="/home/ha/lic_dataset"
 
 #数据包名字
 bag_name=(
-#"2020-01-14-10-09-53SyncSystemTime"
-#"2020-01-14-10-04-16SyncSystemTime"
+"2020-01-14-10-09-53SyncSystemTime"
+"2020-01-14-10-04-16SyncSystemTime"
 "2020-01-14-10-02-23SyncSystemTime"
 )
 
